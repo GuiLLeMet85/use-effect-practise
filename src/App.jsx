@@ -6,12 +6,14 @@ function App() {
 
   const [showCounter, setShowCounter] = useState(true)
 
-  return (
+  return ( 
     <div className="App">
       <h1>Hello world</h1>
       {showCounter && <Counter />}
+      <button onClick = {() => setShowCounter (prev => !prev)}>{showCounter ? "hide": "show"}</button>
     </div>
-  );
+
+  )
 }
 
 export default App;
