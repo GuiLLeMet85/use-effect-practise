@@ -11,8 +11,9 @@ export default function Counter() {
     return () => {
       setCount(0);
       setDynamicClass('text');
+      console.log('All clean here. Count:', count, 'Class:', dynamicClass);
     }
-  }, [])
+  }, []);
 
 
   // First iteration
